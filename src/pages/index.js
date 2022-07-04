@@ -25,7 +25,16 @@ function AuthLinks() {
         </p>
       ) : (
         <>
-          <button onClick={signIn}>Sign in</button>
+          <button
+            onClick={() =>
+              signIn("credentials", {
+                email: "imn.tl@gmail.com",
+                password: "imen55",
+              })
+            }
+          >
+            Sign in
+          </button>
         </>
       )}
     </>
